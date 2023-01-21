@@ -51,13 +51,13 @@ def main():
 	tweetlist = tweetlist1 + tweetlist2 + tweetlist3
 
 
-	# Get the hashtags from a file
-	with open('hashtags.txt', 'r') as file:
-		hashtags = file.readlines()
+	# # Get the hashtags from a file
+	# with open('hashtags.txt', 'r') as file:
+	# 	hashtags = file.readlines()
 
-	# Pick a random hashtag
-	i = random.randint(0, len(hashtags) - 1)
-	hashtag = hashtags[i].strip()
+	# # Pick a random hashtag
+	# i = random.randint(0, len(hashtags) - 1)
+	# hashtag = hashtags[i].strip()
 
 	with open('pic_urls.txt', 'r') as file:
 		url_list = file.readlines()
@@ -170,7 +170,7 @@ def main():
 	
 
 			# Append the hashtag to the tweet
-			tweettext += ' ' + hashtag
+			#tweettext += ' ' + hashtag
 
 			# # Post the tweet
 			# api.update_status(tweettext)
